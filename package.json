@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "uglifyjs js/* -c -o foo.min.js"
+    "start": "uglifyjs js/input.js js/test.js  -c -o foo.min.js",
+    "startCss": "uglifycss css/css1.css css/css2.css > output.css"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/NickTaporuk/minJsNpm/issues"
   },
-  "homepage": "https://github.com/NickTaporuk/minJsNpm#readme"
+  "homepage": "https://github.com/NickTaporuk/minJsNpm#readme",
+  "dependencies": {
+    "uglifycss": "0.0.24"
+  }
 }
